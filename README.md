@@ -40,13 +40,12 @@ src/
 │ └── JogoPoo.java
 │
 └── poo
-├── Personagem.java
-├── Heroi.java
-├── Inimigo.java
-├── Goblin.java
-├── Esqueleto.java
-└── Chefe.java
-
+     └── Personagem.java
+     └── Heroi.java
+     └── Inimigo.java
+     └── Goblin.java
+     └── Esqueleto.java
+     └── Chefe.java
 ```
 
 
