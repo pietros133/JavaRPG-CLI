@@ -31,7 +31,7 @@ Exemplo:
 
 ---
 
-# 🧱 Estrutura do projeto
+# Estrutura do projeto
 
 O jogo foi desenvolvido utilizando **classes separadas para cada entidade**.
 ```text
@@ -71,9 +71,13 @@ src/
 
 # Como executar
 
-1. Clone o repositório
-
+```bash
+git checkout nomeBranch
+```
+1. Clone o repositório 
+```Bash
 git clone https://github.com/pietros133/JavaRPG-CLI.git
+```
 
 2. Entre na pasta do projeto
 
@@ -86,3 +90,4 @@ javac *.java
 
 
 4. Execute o jogo
+``
