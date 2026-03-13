@@ -34,7 +34,7 @@ Exemplo:
 # 🧱 Estrutura do projeto
 
 O jogo foi desenvolvido utilizando **classes separadas para cada entidade**.
-
+```text
 src/
 ├── com.mycompany.jogopoo
 │ └── JogoPoo.java
@@ -47,7 +47,7 @@ src/
 ├── Esqueleto.java
 └── Chefe.java
 
-
+``
 
 ---
 
