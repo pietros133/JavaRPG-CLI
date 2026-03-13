@@ -71,23 +71,23 @@ src/
 
 # Como executar
 
-```bash
-git checkout nomeBranch
-```
 1. Clone o repositório 
 ```Bash
 git clone https://github.com/pietros133/JavaRPG-CLI.git
 ```
 
 2. Entre na pasta do projeto
-
+```Bash
 cd JavaRPG-CLI
+```
 
 
 3. Compile o projeto
-
+```Bash
 javac *.java
+```
 
 
-4. Execute o jogo
+
+5. Execute o jogo
 ``
