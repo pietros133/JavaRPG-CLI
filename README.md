@@ -1,5 +1,5 @@
 ![Java](https://img.shields.io/badge/Java-17-orange)
-![Status](https://img.shields.io/badge/status-learning-blue)
+![Status](https://img.shields.io/badge/status-working-blue)
 # Java RPG CLI
 
 Um pequeno jogo de RPG feito em **Java utilizando Programação Orientada a Objetos (POO)**.  
