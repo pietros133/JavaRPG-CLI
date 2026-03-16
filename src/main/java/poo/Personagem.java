@@ -12,8 +12,8 @@ public class Personagem {
 
     public void atacar(Inimigo inimigo) {
         if (mana >= 10) {
-            System.out.println(nome + "atacou");
-            inimigo.receberDano(20);
+            System.out.println(nome + " atacou");
+            inimigo.receberDano(75);
             mana -= 10;
         } else {
             System.out.println("Mana insuficiente");
@@ -34,7 +34,7 @@ public class Personagem {
     public void especial(Inimigo inimigo) {
         if (mana >= 50) {
             System.out.println(nome + " soltou ESPECIAL!");
-            inimigo.receberDano(50);
+            inimigo.receberDano(150);
             mana -= 45;
         } else {
             System.out.println("Mana insuficiente para usar especial!");
@@ -59,5 +59,17 @@ public class Personagem {
         System.out.println("Status do " + nome);
         System.out.println("Vida: " + vida);
         System.out.println("Mana: " + mana);
+    }
+
+    public int getVida() {
+        return vida;
+    }
+
+    public int getMana() {
+        return mana;
+    }
+
+    public String getNome() {
+        return nome;
     }
 }

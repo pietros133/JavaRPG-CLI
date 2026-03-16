@@ -9,7 +9,7 @@ public class Inimigo {
     public Inimigo(String nome, int dano, int chefeVida) {
         this.nome = nome;
         this.dano = dano;
-        this.vida = vida;
+        this.vida = chefeVida;
     }
 
     public void atacar(Personagem personagem) {
@@ -34,10 +34,6 @@ public class Inimigo {
     }
 
     public int getVida() {
-        return vida;
-    }
-
-    public int setVida(int vida) {
         return vida;
     }
 }
