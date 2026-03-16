@@ -15,7 +15,7 @@ Este projeto foi desenvolvido para reforçar conceitos importantes de Java, como
 
 Além disso, serve como um projeto de prática para melhorar habilidades em desenvolvimento back-end e estruturação de sistemas simples.
 
-## 🎮 Como Funciona
+## Como Funciona
 
 O jogo acontece no terminal.
 
