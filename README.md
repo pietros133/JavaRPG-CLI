@@ -30,21 +30,28 @@ Fluxo básico do jogo:
 ## Estrutura do Projeto
 
 O projeto está organizado em pacotes Java para separar responsabilidades e manter o código mais organizado.
-
-```
+``
 src/
- └── main/
-      └── java/
-           ├── poo/
-           │    ├── Personagem.java
-           │    ├── Inimigo.java
-           |    ├── Heroi.java
-           |    ├── Esqueleto.java
-           |    ├── Goblin.java
-           |    ├── Chefe.java
-           │    └── Utils.java
-           │
-           └── mycompany/
+└── main/
+    └── java/
+        ├── poo/
+        │   ├── Personagem.java
+        │   ├── Inimigo.java
+        │   ├── Heroi.java
+        │   ├── Esqueleto.java
+        │   ├── Goblin.java
+        │   ├── Chefe.java
+        │   ├── Utils.java
+        │   ├── Equipamento.java
+        │   ├── ArmaduraDourada.java
+        │   ├── ArmaduraPrata.java
+        │   ├── Vestes.java
+        │   ├── Espada.java
+        │   ├── Marreta.java
+        │   └── Machado.java
+        │
+        └── com/
+            └── mycompany/
                 └── jogoPoo.java
 ```
 
