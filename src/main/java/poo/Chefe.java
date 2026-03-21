@@ -8,6 +8,6 @@ package poo;
 public class Chefe extends Inimigo {
 
     public Chefe() {
-        super("Rei goblin", 65, 560);
+        super("Rei goblin", 65, 260);
     }
 }
