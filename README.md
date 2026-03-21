@@ -89,7 +89,6 @@ java Main
 ## Melhorias Futuras
 
 Algumas melhorias planejadas para o projeto:
-* Diferentes tipos de inimigos
 * Sistema de Armaduras
 
 ## Autor
