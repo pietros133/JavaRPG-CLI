@@ -89,11 +89,8 @@ java Main
 ## Melhorias Futuras
 
 Algumas melhorias planejadas para o projeto:
-
-* Sistema de habilidades
 * Diferentes tipos de inimigos
-* Sistema de itens
-* Sistema de níveis para o jogador
+* Sistema de Armaduras
 
 ## Autor
 
