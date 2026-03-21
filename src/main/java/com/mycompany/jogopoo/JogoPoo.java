@@ -6,7 +6,16 @@ import poo.Chefe;
 import poo.Inimigo;
 import poo.Esqueleto;
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 import poo.Utils;
+import poo.Espada;
+import poo.Machado;
+import poo.Marreta;
+import poo.ArmaduraDourada;
+import poo.ArmaduraPrata;
+
+
+
 
 public class JogoPoo {
 
@@ -22,6 +31,52 @@ public class JogoPoo {
         String nome = sc.nextLine();
 
         Heroi meuHeroi = new Heroi(nome);
+        System.out.println("===============================");
+        System.out.println("   ⚔️ SELEÇÃO DE EQUIPAMENTOS ⚔️ ");
+        System.out.println("===============================");
+        System.out.println("Escolha: 1 - SKULL BREAKER (ESPADA) | 2 - SKY BREAKER (MACHADO) | 3 - GRAVEYARD SIGN (MARRETA)");
+        System.out.println("==============================================================================================");
+
+        int optionWeapon = sc.nextInt();
+        
+        switch (optionWeapon) {
+            case 1:
+                System.out.println("Arma escolhida: Skull Breaker");
+                meuHeroi.equiparArma(new Espada());
+                break;
+            case 2:
+                System.out.println("Arma escolhida: Sky Breaker");
+                meuHeroi.equiparArma(new Machado());
+                break;
+            case 3:
+                System.out.println("Arma escolhida: Graveyard Sign");
+                meuHeroi.equiparArma(new Marreta());
+                break;
+            default:
+                System.out.println("opção invalida!!");
+                break;
+        }
+        System.out.println("===============================");
+        System.out.println("    ⚔ SELEÇÃO DE ARMADURAS ⚔   ");
+        System.out.println("=================================================================");
+        System.out.println("Escolha: 1 - FALLEN GOLDEN (OURO) | 2 - FALLEN SILVER (PRATA)"    );
+        System.out.println("=================================================================");
+        int optionWearing = sc.nextInt();
+        
+        switch(optionWearing){
+            case 1:
+                System.out.println("Armadura escolhida: Fallen Golden");
+                meuHeroi.tryNewVeste(new ArmaduraDourada());
+                break;
+            case 2: 
+                System.out.println("Armadura escolhida: Fallen Silver ");
+                meuHeroi.tryNewVeste(new ArmaduraPrata());
+                break;
+            default:
+                System.out.println("Opção invalida");
+                break;
+        }
+        
         Inimigo inimigo = new Goblin();
 
         int fase = 1;
@@ -42,9 +97,10 @@ public class JogoPoo {
             System.out.println("5 🚪 Abandonar luta");
             System.out.println("---------------------------------");
             System.out.print("Escolha uma opção: ");
-
+            
+            
+            
             int option = sc.nextInt();
-
             System.out.println();
 
             switch (option) {
@@ -53,13 +109,13 @@ public class JogoPoo {
                     meuHeroi.atacar(inimigo);
 
                     if (inimigo.getVida() > 0) {
-                        Utils.delay(1500);
+                        Utils.delay(600);
                         inimigo.atacar(meuHeroi);
                     }
                     break;
 
                 case 2:
-                    System.out.println("❤️  Você usou uma poção!");
+                    JOptionPane.showMessageDialog(null, "❤️  Você usou uma poção!");
                     meuHeroi.curar();
                     break;
 
@@ -71,17 +127,18 @@ public class JogoPoo {
                     break;
 
                 case 4:
-                    System.out.println("💥 ATAQUE ESPECIAL!");
+
+                    JOptionPane.showMessageDialog(null, "💥 ATAQUE ESPECIAL!");
                     meuHeroi.especial(inimigo);
 
                     if (inimigo.getVida() > 0) {
-                        Utils.delay(1500);
+                        Utils.delay(500);
                         inimigo.atacar(meuHeroi);
                     }
                     break;
 
                 case 5:
-                    System.out.println("🚪 Você abandonou a luta...");
+                    JOptionPane.showMessageDialog(null,"🚪 Você abandonou a luta...");
                     sc.close();
                     return;
 
@@ -91,24 +148,26 @@ public class JogoPoo {
 
             if (meuHeroi.getVida() <= 0) {
                 System.out.println("\n💀 Você foi derrotado...");
+                Utils.delay(800);
                 System.out.println("Game Over!");
                 sc.close();
                 return;
             }
 
             if (inimigo.getVida() <= 0) {
-
+                Utils.delay(500);
                 System.out.println("\n🏆 Inimigo derrotado!");
 
                 fase++;
 
                 meuHeroi.resetarStatus();
+                Utils.delay(500);
 
                 if (fase == 2) {
 
                     Utils.delay(1500);
                     System.out.println("\n💀 Espere...");
-                    Utils.delay(1500);
+                    Utils.delay(600);
 
                     System.out.println("Um ESQUELETO apareceu!!!");
 
