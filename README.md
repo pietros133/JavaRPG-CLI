@@ -30,7 +30,7 @@ Fluxo básico do jogo:
 ## Estrutura do Projeto
 
 O projeto está organizado em pacotes Java para separar responsabilidades e manter o código mais organizado.
-``
+```
 src/
 └── main/
     └── java/
